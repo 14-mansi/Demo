@@ -32,6 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource{
         cell.lblName.text = data["name"]
         cell.lblAddress.text = data["Address"]
         cell.imgDemo.image = UIImage(named: data["img"]!)
+        cell.imgDemo.backgroundColor = .darkGray
         cell.imgDemo.layer.cornerRadius = cell.frame.size.height/2
         cell.imgDemo.clipsToBounds = true
         return cell
